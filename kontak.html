@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>KONTAK</title>
+</head>
+<body>
+	<fieldset>
+		<h2 align="center">DATA KONTAK</h2>
+		<form action="simpan_kontak.php" method="post" align="center">
+			<table align="center">
+				<tr>
+					<td>Nama</td>
+					<td><input type="text" name="nama"></td>
+				</tr>
+				<tr>
+					<td>Jenis Kelamin</td>
+					<td><input type="radio" name="jkel" value="Laki-Laki">Laki-Laki</td>
+					<td><input type="radio" name="jkel" value="Perempuan">Perempuan</td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><input type="text" name="email"></td>
+				</tr>
+				<tr>
+					<td>Alamat</td>
+					<td><input type="text" name="alamat"></td>
+				</tr>
+				<tr>
+					<td>Kota</td>
+					<td><input type="text" name="kota"></td>
+				</tr>
+				<tr>
+					<td>Pesan</td>
+					<td><textarea name="pesan" cols="22" rows="4"></textarea></td>
+				</tr>
+			</table>
+			<br>
+			<input type="submit" name="submit" value="Simpan Data">
+            <input type="reset" name="reset" value="Reset">
+		</form>
+	</fieldset>
+</body>
+</html>
