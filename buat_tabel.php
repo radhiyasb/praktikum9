@@ -11,7 +11,7 @@ if (!$conn) {
 	die("Connection failed: " . mysqli_connect_error());
 }
 
-//create database
+//create table
 $sql = "CREATE TABLE kontak (
 		id INT(4) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 		nama VARCHAR(30) NOT NULL,
@@ -24,7 +24,7 @@ $sql = "CREATE TABLE kontak (
 	echo "Table created succesfully";
 	}
 	else {
-	echo "Error creating database: " . mysqli_error($conn);
+	echo "Error creating table: " . mysqli_error($conn);
 	}
 
 	mysqli_close($conn);
